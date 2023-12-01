@@ -11,6 +11,54 @@ import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import ProtectedPage from './ProtectedPage';
 import Community from './Community';
 import ProductCard from './Pages/ProductCard';  
+import About from './Pages/About';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -51,6 +99,7 @@ const ClerkWithRoutes = ()=> {
         
         <Route path='/community' element={<Community/>}/>
         <Route path='/productcard' element={<ProductCard/>}/>
+        <Route path='/About' element={<About/>}/>
 
 
 <Route

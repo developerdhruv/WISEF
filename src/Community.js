@@ -5,18 +5,14 @@ import { useState, useEffect } from 'react';
 import ProductCard from './Pages/ProductCard';
 import { supabase } from './supabaseClient';
 import ProtectedPage from './ProtectedPage';
-import './App.css'
 
 
 
 
 
 
-// IEVMMvL3YM3zbOu4
 
-// Create the user interface (Navbar, Form to create products, product card)
-// Setup supabase, create a table for our products
-// Implement the CRUD logic for the products
+
 
 function Community() {
   const [ name, setName ] = useState("");
@@ -68,7 +64,7 @@ function Community() {
     <>
       <Navbar>
         <Container>
-          <Navbar.Brand>WISEF</Navbar.Brand>
+          <Navbar.Brand>SAFETY HARBOR</Navbar.Brand>
           <Nav>
             <Nav.Item>Created by Dhruv Kumar</Nav.Item>
           </Nav>
@@ -78,7 +74,11 @@ function Community() {
         <Row>
           <Col xs={12} md={8}>
             <h3>Create Immediate Request for Help</h3>
-            <Form.Label>Your Name</Form.Label>
+            <div></div>
+
+
+
+            <Form.Label>Your Name / Justify Your Situation</Form.Label>
             <Form.Control
               type="text"
               id="name"
@@ -91,7 +91,7 @@ function Community() {
               onChange={(e) => setLocation(e.target.value)}
             />
             <br></br>
-            <Button onClick={() => createRequest()}>Create Immediate Request</Button>
+            <Button onClick={() => createRequest()} style={{backgroundColor:'#0d6efd'}}>Create Immediate Request</Button>
           </Col>
         </Row>
         <hr></hr>
