@@ -1,8 +1,12 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .rj {
   font-family: Arial, sans-serif;
   
  }
- 
+
  .navbar {
   display: flex;
   justify-content: space-around;
@@ -31,21 +35,43 @@
   cursor: pointer;
   border-radius: 5px;
  }
+ .heros{
+  display: flex;
+ }
  
  .login-btn:hover {
   background-color: #0056b3;
  }
 
- .maps{
-  width: 90%;
+.map{
+  border: 2px solid black;
   height: 500px;
-  border-radius: 50px;
-  margin-left: 70px;
+  width: 30rem;
+
+
+}
+
+
+.h4{
+  font-size: 2.9rem;
+  font-weight: 900;
+  margin-left: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+
+ .sosec{
+  width: 70rem;
+  border: 2px solid black;
+  background-image: url("sos_bg.png");
+  
  }
 
 
  .SOS {
-  background-color: #007bff;
+  background-color: #e72525;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -55,11 +81,11 @@
   justify-self: center;
   margin-left: 35%;
   margin-top: 20px;
-  height: 100px;
+  height: 400px;
   width: 400px;
-  font-size: 2.5rem;
-  font-weight: 600px;
-  border-radius: 30px;
+  font-size: 2.9rem;
+  font-weight: 900px;
+  border-radius: 100%;
  }
 
  .logo{
@@ -85,6 +111,13 @@
   }
 
 
-  .herose{
-    background-image: url('bg.png');
+  .card{
+    border: 2px solid black;
+    background-color: rgb(161, 236, 146);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
   }
+
+
+  
