@@ -112,7 +112,7 @@ function ProtectedPage() {
 
 
     const getlocation = async () => {
-        const location = await axios.get('https://ipapi.co/json/')
+        const location = await axios.get('https://ipapi.co/json/xml')
         setCurrLocation(location.data)
     }
     
