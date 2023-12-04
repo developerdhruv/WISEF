@@ -5,6 +5,7 @@ import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import ProtectedPage from '../ProtectedPage';
 import { useEffect } from 'react';
 import axios from 'axios';
+import '../App.css';
 
 
 
@@ -167,7 +168,8 @@ const UseGeolocation = () => {
                     <>
                         <Card.Title>{request.name}</Card.Title>
                         <Card.Text>{ currLocation.longitude +'  '+ currLocation.latitude}</Card.Text>
-                        <Button >INFORM Police</Button>
+                        <Button className="btnofpolice" >INFORM Police</Button>
+                        <a  href='https://www.google.com/maps/@ + {currlocation.latitude} +{currlocation.longitude}'   classname = 'ahref'>Maps</a>
                        
                         
                         
