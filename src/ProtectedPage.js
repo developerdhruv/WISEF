@@ -14,6 +14,7 @@ import ProductCard from './Pages/ProductCard';
 import { supabase } from './supabaseClient';
 
 
+
 import Community from "./Community.js";
 
 import { BrowserRouter, Route, Routes, redirect } from "react-router-dom";
@@ -67,54 +68,20 @@ function ProtectedPage() {
   
     console.log(requests);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     const [currLocation, setCurrLocation] = useState({})
     useEffect(() => {
         getlocation()
 
     }, []);
 
+    
 
     const getlocation = async () => {
         const location = await axios.get('https://ipapi.co/json/xml')
         setCurrLocation(location.data)
     }
+
+    
     
     
 
@@ -123,6 +90,8 @@ function ProtectedPage() {
 
 
     const navigate = useNavigate();
+
+    
     return(
         <>
         
@@ -156,7 +125,7 @@ function ProtectedPage() {
                 </div>
 
                 <div className="map">
-                <iframe className="map" scrolling="no" src="https://kartaview.org/map/@28.613461517356427,77.21140284734679,13z" title="description"></iframe>
+                <iframe className="maps" scrolling="no" src="https://kartaview.org/map/@28.613461517356427,77.21140284734679,13z" title="description"></iframe>
                   
                 
 
@@ -169,10 +138,12 @@ function ProtectedPage() {
 
                 </div>
 
-                <div>
+                <div className = "req">
+                  <div className = "req1">
                     <h2 className="h4">CURRENT REQUESTS</h2>
+                  </div>
                     <Row xs={1} lg={3} classname = 'g-4'>
-                        {requests.map((request) => 
+                        {requests?.map((request) => 
                         (
                             <Col>
                                 <ProductCard request={request} />

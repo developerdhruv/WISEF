@@ -15,7 +15,7 @@ function App() {
     <section className='herosec' class="py-24 flex items-center min-h-screen justify-center bg-white">
   <div class="mx-auto max-w-[43rem]">
     <div class="text-center">
-      <p className='harbor' class="text-lg font-medium leading-10 text-indigo-600/95">SAFE HARBOR </p>
+      <p className='harbor' style={{fontSize:'1.7rem'}} class="text-lg font-medium leading-10 text-indigo-600/95">SAFE HARBOR </p>
       <h1 class="mt-3 text-[3.5rem] font-bold leading-[4rem] tracking-tight text-black">Let's Contribute to Women Safety&nbsp;& Make the World a Better Place</h1>
       <p class="mt-3 text-lg leading-relaxed text-slate-400"> A Decentralized community for safeguarding Women</p>
     </div>

@@ -168,7 +168,7 @@ const UseGeolocation = () => {
                     <>
                         <Card.Title>{request.name}</Card.Title>
                         <Card.Text>{ currLocation.longitude +'  '+ currLocation.latitude}</Card.Text>
-                        <Button className="btnofpolice" >INFORM Police</Button>
+                        <Button className="btnofpolice" style={{backgroundColor:'Blue'}} >INFORM Police</Button>
                         <a  href='https://www.google.com/maps/@ + {currlocation.latitude} +{currlocation.longitude}'   classname = 'ahref'>Maps</a>
                        
                         
