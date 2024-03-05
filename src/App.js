@@ -12,7 +12,7 @@ import './index.css'
 function App() {
   return (
     <>
-    <section className='herosec' class="py-24 flex items-center min-h-screen justify-center bg-white">
+    <section className='herosec' class="py-24 flex items-center min-h-screen justify-center ">
   <div class="mx-auto max-w-[43rem]">
     <div class="text-center">
       <p className='harbor' style={{fontSize:'1.7rem'}} class="text-lg font-medium leading-10 text-indigo-600/95">SAFE HARBOR </p>
